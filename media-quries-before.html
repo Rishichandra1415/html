@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA QUERIES</title>\
+
+    <style>
+        /*  base style */
+        
+        h1 {
+            margin-bottom: 15px;
+        }
+        
+        p {
+            border: 1px solid black;
+            margin-bottom: 15px;
+        }
+        
+        #p1 {
+            background-color: blue;
+            width: 300px;
+            height: 300px;
+        }
+        
+        #p2 {
+            background-color: #deb887;
+            width: 50px;
+            height: 50px;
+        }
+        /* large devices only*/
+        
+        @media(min-width:1200px) {
+            #p1 {
+                width: 80%;
+            }
+            #p2 {
+                width: 150%;
+                height: 150%;
+            }
+        }
+        /*  medium devies only   sf*/
+        
+        @media(min-width:900px) and (max-width:1100px) {
+            #p1 {
+                width: 50%;
+            }
+            #p2 {
+                width: 50%;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1> MEDIA QUERIES</h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+</body>
+
+</html>

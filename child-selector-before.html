@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHILD selector</title>
+    <style>
+        /*  any article  elemebnt vwhich is a direct chilld of a section element i.e any article elemennt wbse immediate parent is a section element.*/
+        
+        section>article {
+            color: greenyellow;
+            font-size: 30px;
+        }
+        /* any h2 element  which is a dirct child 0f  a section element i.e amy h2 element whos e immediate paeren is a sectiopj element.*/
+        
+        section>div {
+            color: blueviolet;
+        }
+    </style>
+</head>
+`
+
+<body>
+    <h1> child selector</h1>
+    <section>
+
+        <div>
+            <a href="http://127.0.0.1:5500/css/element-with-class-before.html">rishi</a>
+            <h2> subheading1</h2>
+            <article> ARTICLE WHICH INSIDE DIV, WHICH ISINSIDE SECTION </article>
+        </div>
+    </section>
+    <section>
+        <article> article is the direct child of the section </article>
+    </section>
+    <h2> subheading 2</h2>
+
+</body>
+
+</html>

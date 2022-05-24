@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BOX MODEL</title>
+    <style>
+        * {
+            /* it help us to select all the element of the and apply all the properties to them that we want: he doesnt ask amything he just allow to take action*/
+            box-sizing: border-box;
+            color: green;
+        }
+        
+        body {
+            background-color: gray;
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            /*outline-offset: 33px;*/
+        }
+        
+        #box {
+            padding: 10px;
+            /* top ,left,lower,right*/
+            border: 5px solid black;
+            margin-top: 50px;
+            width: 300 px;
+            background-color: pink;
+            height: 50px;
+            overflow: auto;
+            /* its help us to doent overflow anything that means alphabet doesnt go outside its make a scroll bar */
+            outline-style: dashed;
+        }
+        
+        #content {
+            background-color: #90ee90;
+            border: #90ee90;
+        }
+        
+        h1 {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> box model</h1>
+    <div id="box">;
+        <div id=" content"> my name is rishi im a boiii Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias tempora officiis optio libero quas consectetur laboriosam rerum aspernatur fuga voluptates enim autem non eum corporis vel aliquid, expedita excepturi
+            ad.
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseduo class selector</title>
+    |
+    <style>
+        header li {
+            list-style: none;
+            /* THIS HELP US TO remove the side point  the list  */
+        }
+        
+        a:link,
+        /* link selector use to style the link when we doent go on the link
+        mtlb ki yai h ki link usko style krtaa h jiso m hmsbb select nai krtee means that jispai hmmsbb apnaa mouse courser naai laijatee */
+        
+        a:visited {
+            /*  yai h selected link kon style krnee m help krtaa hh  */
+            text-decoration: none;
+            background-color: red;
+            border: 1px solid blue;
+            color: black;
+            width: 100px;
+            text-align: left;
+            margin-bottom: 5px;
+            display: block;
+        }
+        
+        a:hover,
+        /*  eselector to style link when you mouse over them */
+        
+        a:active {
+            /*  selector to style them when you click on them*/
+            background-color: blueviolet;
+            color: black
+        }
+        
+        header li:nth-child(3) {
+            /*  it means tmko jiss no. ko bhib edit krnaa h uska no. likk doo bracekt mai ya pirr kuch bhi perform krnaa h thoo*/
+            font-size: large;
+            color: brown;
+        }
+        
+        section div :nth-child(odd) {
+            background-color: grey;
+        }
+        
+        section div:nth-child(4):hover[ background-color]
+    </style>
+</head>
+
+
+<body>
+    <h1> pseudo class selector</h1>
+    <header>
+        <ul>
+            <li><a href="/">home</a></li>
+            <li> <a href="https://www.facebook.com/SRKFans/" target="-blank">sharukhs page</a></li>
+            <li><a href="https://en-gb.facebook.com/Coursera/" target=" -blank">coursera fan page</a></li>
+        </ul>
+    </header>
+    <section>
+        <div> div 1</div>
+        <div> div 2</div>
+        <div> div 3</div>
+        <div> div 4</div>
+        <div> div 5</div>
+        <div> div 6</div>
+        <div> div 7</div>
+        <div> div 8</div>
+        <div> div 9</div>
+        <div> div 10</div>
+        <div> div 11</div>
+        <div> div 12</div>
+        <div> div 13</div>
+        <div> div 14</div>
+        <div> div 15</div>
+    </section>
+</body>
+
+</html>
